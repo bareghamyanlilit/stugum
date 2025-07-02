@@ -1,12 +1,12 @@
 import React from 'react'
-import { BrowserRouter as  Route, Routes, HashRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ContactPage, HomePage } from './container'
 import { GlobalStyles } from './styled'
 import { MyFooter, MyHeader } from './component'
 
 export const MyProject=()=>{
 	return (
-		<HashRouter>
+		<Router>
 			<GlobalStyles/>
 			<MyHeader/>
 			<Routes>
@@ -14,6 +14,6 @@ export const MyProject=()=>{
 				<Route path='/contact' element={<ContactPage />} />
 			</Routes>
 			<MyFooter/>
-		</HashRouter>
+		</Router>
 	)
 }
